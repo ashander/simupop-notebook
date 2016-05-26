@@ -9,7 +9,3 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 RUN pip install --upgrade pip && pip install --upgrade --log /home/jovyan/pip-debug.log simupop
 
 WORKDIR /notebooks
-COPY .  dtpva
-
-
-
