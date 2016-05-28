@@ -75,7 +75,8 @@ RUN pip2 --no-cache-dir install ipykernel && \
 
 #Install simupop and deps
 RUN pip3 --no-cache-dir install numpy && \
-    pip3 --no-cache-dir install simupop==1.1.7.1 && \
+    pip3 --no-cache-dir install \
+         -i https://pypi.anaconda.org/bpeng/simple simupop && \
     rm -rf /root/.cache
 
 # Move notebook contents into place.
